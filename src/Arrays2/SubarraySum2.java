@@ -6,8 +6,20 @@ package Arrays2;
 
 public class SubarraySum2 {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4};
-        printSubarraySums2(array);
+        int[] array = {5, 3, -1, 8};
+//        printSubarraySums2(array);
+        contributionTechnique(array);
+    }
+
+    private static void contributionTechnique(int[] array) {
+        int n = array.length;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            int contribution = 0;
+            contribution += (i + 1) * (n - i);
+            ans += contribution * array[i];
+        }
+        System.out.println(ans);
     }
 
     private static void printSubarraySums2(int[] array) {
