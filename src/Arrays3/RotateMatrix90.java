@@ -9,8 +9,7 @@ public class RotateMatrix90 {
         display(matrix);
         transpose(matrix);
         for (int i = 0; i < matrix.length; i++) {
-            int[] temp = matrix[i];
-            reverse(temp);
+            reverse(matrix[i]);
         }
         System.out.println("After rotation ");
         display(matrix);
