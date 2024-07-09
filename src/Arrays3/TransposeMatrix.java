@@ -3,6 +3,7 @@ package Arrays3;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Objects;
 
 /*
 * Transpose the given n*n matrix
@@ -14,9 +15,9 @@ public class TransposeMatrix {
 //        showImage();
         int[][] matrix = {{1,2,3},{4,5,6}, {7,8,9}};
         System.out.println("Before transpose");
-        for(int i = 0; i < matrix.length; i++) {
+        for (int[] ints : matrix) {
             for (int j = 0; j < matrix[0].length; j++) {
-                System.out.print(matrix[i][j]+" ");
+                System.out.print(ints[j] + " ");
             }
             System.out.println();
         }
@@ -45,7 +46,7 @@ public class TransposeMatrix {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1400, 900);
 
-        ImageIcon icon = new ImageIcon(TransposeMatrix.class.getResource("img.png"));
+        ImageIcon icon = new ImageIcon(Objects.requireNonNull(TransposeMatrix.class.getResource("fistmissingpositive1.png")));
         JLabel label = new JLabel(icon);
 
         frame.getContentPane().add(label, BorderLayout.CENTER);

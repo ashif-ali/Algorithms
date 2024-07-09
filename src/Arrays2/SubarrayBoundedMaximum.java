@@ -32,7 +32,7 @@ public class SubarrayBoundedMaximum {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
 
-        ImageIcon icon = new ImageIcon(SubarrayBoundedMaximum.class.getResource("img.png"));
+        ImageIcon icon = new ImageIcon(SubarrayBoundedMaximum.class.getResource("fistmissingpositive1.png"));
         JLabel label = new JLabel(icon);
 
         frame.getContentPane().add(label, BorderLayout.CENTER);
