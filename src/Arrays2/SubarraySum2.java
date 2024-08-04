@@ -32,7 +32,7 @@ public class SubarraySum2 {
                 if (s == 0) {
                     ans += prefixSum[e];
                 } else {
-                    ans += prefixSum[e] - prefixSum[s - 1];
+                    ans += prefixSum[e] - prefixSum[s-1];
                 }
             }
             System.out.println(ans);
