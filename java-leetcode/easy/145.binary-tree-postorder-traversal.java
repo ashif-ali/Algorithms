@@ -34,6 +34,7 @@ class Solution {
             return;
         }
         postorderHelper(node.left, result);
+
         postorderHelper(node.right, result);
         result.add(node.val);
     }
